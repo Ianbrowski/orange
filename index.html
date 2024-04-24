@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+</head>
+<body>
+	
+<div class="header">
+	<img class="pic" src="img/owange.png">
+  <a href="index.html" class="logo">Orange.com</a>
+  <div class="header-right">
+    <a class="active" href="#index">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+</div>
+<div class="flip-card" id="flipCard">
+  <div class="flip-card-inner">
+
+    <div class="flip-card-front">
+   
+<div class="login-container">
+    <h2 style="margin-top:30px;margin-bottom: 20px;font-size: 30px;font-weight: 900;word-spacing: -4px; ">Login</h2>
+<form id="loginForm">
+      <div class="form-group">
+        
+        <input type="text" id="username" name="username"placeholder="Username"required>
+      </div>
+      <div class="form-group">
+        
+        <input type="password" id="password" name="password" placeholder="Password" required>
+      </div>
+       <div class="remember-forgot">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <div class="forgot">
+                   <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" class="forgot-password-link">Forgot password?</a>
+                </div>
+            </div>
+      <div class="form-group">
+        <a href="next.html" class="log">Login</a>
+      </div>
+      <button onclick="flipCard(this.parentNode.parentNode)">Register?</button>
+   <div class="social-links">
+        <a href="https://www.facebook.com"><img src="img/fb.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com"><img src="img/ig.png" alt="Instagram"></a>
+        <a href="https://mail.google.com"><img src="img/email.png" alt="Gmail"></a>
+    </div>
+</form>
+ 
+
+      </div>
+      
+</div>
+
+<div class="flip-card-back">
+<div class="reg-container">
+<h2 style="margin-top:40px;margin-bottom: 40px;font-size: 30px;font-weight: bolder;word-spacing: -1px; ">Create Account</h2>
+<hr>
+<form id="registrationForm">
+	
+        <input type="text" id="username" name="username" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        
+        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+      </div>
+      <div class="form-group">
+        
+        <input type="password" id="password" name="password" placeholder="Retype Password"required>
+      </div>
+      <div class="form-group">
+        <a href="#" class="reg">Create Account</a>
+      </div>
+      <button class="button"onclick="flipCard(this.parentNode.parentNode)">Have an account? Login</button>
+     
+</form>
+  </div>
+     </div>  
+    </div>
+  </div>
+
+       <section id="contact" class="contact-block">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <div class="contact-info-item">
+                <h4>Email</h4>
+                <p>hydrogen2303@gmail.com</p>
+            </div>
+            <div class="contact-info-item">
+                <h4>Phone</h4>
+                <p>09455348841</p>
+            </div>
+            <div class="contact-info-item">
+                <h4>Address</h4>
+                <p>Kaymito St., Bacoor, Phillipines</p>
+            </div>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        
+    </section>
+
+<section class="img">
+	
+</section>
+
+          <section id="about" class="about-block">
+        <h2>About me</h2>
+
+        <div class="image-container">
+            <img src="img/piv.jpeg" alt="About me Image">
+        </div>
+
+        <div class="text-container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at ligula id risus feugiat consequat sit amet ac odio. Phasellus eu dolor a metus condimentum rutrum.</p>
+            <p>Nullam eu libero vel nulla tincidunt suscipit vitae sit amet elit. Nulla facilisi. Proin feugiat, nisl non vestibulum bibendum, eros leo vehicula sem, at aliquet leo arcu id sapien.</p>
+        </div>
+    </section>
+     
+</div>
+    <footer>
+        <p>&copy; 2024 Web Page. All rights reserved to me, to you and to thew worldwideuniverse.</p>
+    </footer>
+    <script>
+    function flipCard() {
+      const card = document.getElementById('flipCard');
+      card.querySelector('.flip-card-inner').classList.toggle('flipped');
+    }
+      // Wait for 2 seconds and then remove the loader
+  setTimeout(function() {
+    var loader = document.getElementById('loader');
+    if (loader) {
+      loader.remove();
+    }
+  }, 2000);
+</script>
+</body>
+</html>
